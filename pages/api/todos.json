@@ -1,0 +1,7 @@
+[
+  {"id": 1, "message": "First todo", "checked": true },
+  {"id": 2, "message": "Second todo", "checked": false },
+  {"id": 3, "message": "Third todo", "checked": false },
+  {"id": 4, "message": "And another todo", "checked": false },
+  {"id": 5, "message": "Last todo", "checked": false }
+]

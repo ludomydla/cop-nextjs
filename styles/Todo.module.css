@@ -1,0 +1,135 @@
+
+
+.layoutRow {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.wrapper {
+  --green: #3c3;
+  --faded-green: #a3c2a3;
+  --red: #c33;
+  --faded-red: #c2a3a3;
+
+  width: 700px;
+  max-width: 100%;
+  background-color: #eeee;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input > input {
+  background-color: white;
+  color: #333;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border: 0;
+  width: 100%;
+  outline: none;
+}
+
+.input > button {
+  background-color: var(--green);
+  color: white;
+  outline: none;
+  border: 0;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  transition: background-color 0.5s;
+}
+
+.input > button:disabled {
+  background-color: var(--faded-green);
+}
+
+.list {
+  padding: 0;
+  color: #333;
+}
+
+.list > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.listContent {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: .5rem 3.5rem;
+}
+
+.listContentChecked {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: .5rem 3.5rem;
+  color: #ccc;
+}
+
+.list > li > button {
+  outline: none;
+  border: 0;
+  background-color: var(--faded-red);
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.list > li > button:hover {
+  background-color: var(--red)
+}
+
+.checkbox {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.checkbox label {
+  width: 100%;
+}
+
+.checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--faded-green);
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.5em;
+  color: #fff;
+  transition: background-color .5s;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  background-color: var(--green);
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: var(--green);
+  text-align: center;
+  line-height: 3rem;
+}
+
+.checkbox input[type="checkbox"]:checked::before {
+  content: "\2714";
+}
